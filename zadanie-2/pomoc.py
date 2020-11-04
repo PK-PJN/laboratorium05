@@ -1,5 +1,6 @@
 #!/usr/bin/python3.6
 
+import os.path
 import webbrowser
 import spacy
 
@@ -11,9 +12,9 @@ def main():
     nlp = spacy.load(MODEL)
     while True:
         doc = nlp(input('Wprowadź zdanie: '))
-        webbrowser.open_new_tab('http://0.0.0.0:5000')
-        print('Naciśnij Ctrl+C, żeby wprowadzić kolejne zdanie')
-        spacy.displacy.serve(doc, style='dep')
+        with open('output.html', 'w') as file:
+            file.write(spacy.displacy.render(doc, style='dep'))
+        webbrowser.open_new_tab('file://' + os.path.abspath('output.html'))
 
 
 if __name__ == '__main__':
