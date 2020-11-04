@@ -19,10 +19,8 @@ tekstów korzystających ze znaczników MediaWiki.
 4. W zrozumieniu działań wykonywanych w punktach
 5 i 6 może pomóc uruchomienie programu `pomoc.py`
 i wprowadzenie do niego zdań zawierających
-odpowiednie relacje. Aby przejść do rozbioru
-gramatycznego kolejnego zdania, należy nacisnąć
-Ctrl+C w tym oknie, w którym działa program.
-Przykłady zdań, które warto wpisać:
+odpowiednie relacje. Oto przykłady zdań, które
+warto wpisać:
 
     * Politechnika Krakowska to uczelnia wyższa w Krakowie.
 
